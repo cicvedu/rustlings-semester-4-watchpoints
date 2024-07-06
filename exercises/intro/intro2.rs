@@ -5,8 +5,7 @@
 // Execute `rustlings hint intro2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
+//println! is a macro that prints text to the console
 fn main() {
-    println!("Hello {}!");
+    println!("Hello world!");
 }

@@ -5,9 +5,10 @@
 // Execute `rustlings hint variables1` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 fn main() {
-    x = 5;
+    // TODO: Add missing keyword.
+    // 在 Rust 编程语言中，let 关键字用于声明变量
+    let x = 5;
     println!("x has the value {}", x);
 }
