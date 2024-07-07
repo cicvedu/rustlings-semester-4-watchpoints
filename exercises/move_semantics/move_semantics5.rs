@@ -6,13 +6,16 @@
 // Execute `rustlings hint move_semantics5` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
+
 
 fn main() {
     let mut x = 100;
-    let y = &mut x;
+    {
+      let y = &mut x;
+      *y += 100;
+    }
+    //你需要确保在任何给定时间，只有一个可变引用存在
     let z = &mut x;
-    *y += 100;
     *z += 1000;
     assert_eq!(x, 1200);
 }
