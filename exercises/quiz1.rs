@@ -13,12 +13,20 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
 
 // Put your function here!
 // fn calculate_price_of_apples {
 
 // Don't modify this function!
+// ->u32
+fn calculate_price_of_apples(a:i32) ->i32{
+  if a <= 40 {
+    return a*2; 
+  } else {
+    return a;
+  }
+}
+//python 对返回值没有比心强制鞋。自动推到
 #[test]
 fn verify_test() {
     let price1 = calculate_price_of_apples(35);
